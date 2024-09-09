@@ -1,0 +1,94 @@
+/* Jobs.css */
+
+.job-list {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    /* display: flex; */
+    /* flex-direction: row; */
+  }
+
+  .job-grid{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  h1 {
+    text-align: center;
+    font-family: 'Cursive', cursive;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .search-input {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    margin: 0 auto 20px;
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .search-input:focus {
+    border-color: #007BFF;
+  }
+  
+  .job-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .job-title {
+    font-size: 1.5em;
+    margin: 0;
+    color: #333;
+  }
+  
+  .job-description {
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  .job-info {
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  .submit-btn {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    padding: 10px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 5px;
+    background-color: #E74C3C;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+  }
+  
+  .submit-btn:hover {
+    background-color: #C0392B;
+  }
+  

@@ -1,0 +1,64 @@
+/* Styling for the Event List */
+.event-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.event-card {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 20px); /* Adjust the width for 3 cards per row */
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.event-card h3 {
+    color: #343a40;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.event-date,
+.event-location,
+.event-description {
+    color: #6c757d;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.join-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.join-btn:not(.joined) {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.join-btn:not(.joined):hover {
+    background-color: #0056b3;
+}
+
+.join-btn.joined {
+    background-color: #28a745;
+    color: #ffffff;
+}
+
+.join-btn.joined:hover {
+    background-color: #218838;
+}

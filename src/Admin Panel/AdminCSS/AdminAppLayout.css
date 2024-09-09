@@ -1,0 +1,57 @@
+/* AdminAppLayout.css */
+
+.AppLayoutContainer {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+  }
+  
+  .AdminSideBar {
+    width: 20vw; /* Adjust this width according to your sidebar size */
+    background-color: #f4f4f4;
+    padding: 20px;
+    /* You can add more styling here */
+  }
+  
+  .mainContent {
+    flex-grow: 1;
+    margin-left: 20vw; /* Same as the sidebar width */
+    padding: 20px;
+    background-color: #fff;
+    /* You can add more styling here */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1200px) {
+    .AdminSideBar {
+      width: 25vw; /* Adjust width for smaller screens */
+    }
+    .mainContent {
+      margin-left: 25vw; /* Adjust margin to match sidebar width */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .AdminSideBar {
+      width: 30vw; /* Adjust width for mobile screens */
+    }
+    .mainContent {
+      margin-left: 30vw; /* Adjust margin to match sidebar width */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .AdminSideBar {
+      width: 100vw; /* Sidebar takes full width on very small screens */
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      z-index: 1;
+    }
+    .mainContent {
+      margin-left: 0; /* No margin needed */
+      padding: 20px;
+    }
+  }
+  
